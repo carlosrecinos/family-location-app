@@ -4,7 +4,6 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 
 import TabBarIcon from '../components/TabBarIcon';
 import MapScreen from '../screens/MapScreen';
-import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
 const MapStack = createStackNavigator({
@@ -19,7 +18,7 @@ MapStack.navigationOptions = {
       name={
         Platform.OS === 'ios'
           ? `ios-locate${focused ? '' : '-outline'}`
-          : 'md-information-circle'
+          : 'md-map'
       }
     />
   ),
