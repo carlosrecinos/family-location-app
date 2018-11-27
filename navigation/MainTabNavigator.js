@@ -3,8 +3,8 @@ import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
 import TabBarIcon from '../components/TabBarIcon';
-import MapScreen from '../screens/MapScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import MapScreen from '../screens/Map/MapScreen';
+import SettingsScreen from '../screens/Map/SettingsScreen';
 
 const MapStack = createStackNavigator({
   Map: MapScreen,
